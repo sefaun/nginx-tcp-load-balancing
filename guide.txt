@@ -1,0 +1,25 @@
+------Sunucu Yuklenecekler------
+apt-get update
+apt-get install nano
+apt-get install curl
+
+--Istenilen Versiyonda Node.js Yukleme--
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+source ~/.bashrc
+nvm list-remote
+nvm install v16.13.1 <- istenilen versiyonu buraya yaziyoruz
+
+npm install -g npm@8.3.0
+apt-get install git
+npm install -g pm2
+
+
+--SSH icin
+apt-get install openssh-server ii.
+--SSH Kullanici Olustur
+useradd {{kullanici adi}}
+passwd {{kullanici adi}} enter sonra sifre gir
+usermod -a -G sudo {{kullanici adi}}
+
+sudo bash
