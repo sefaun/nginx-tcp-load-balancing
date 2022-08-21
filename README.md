@@ -1,4 +1,4 @@
-## Install to Docker Conteiner
+## Install to Docker Container
 
 ```sh
 apt-get update
