@@ -1,6 +1,13 @@
 version: '3.9'
+
 services:
   web:
     image: ubuntu/nginx
+    restart: always
+    volumes:
+      - ./:/home
+      - type: bind
+        source: ./tcp.conf
+        target: /etc/nginx/sites-available/tcp.conf
     ports:
-      - "8888:8888"
+      - "8883:8883"
